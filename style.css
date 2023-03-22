@@ -1,0 +1,258 @@
+body{
+    background-image: url(https://preview.redd.it/t094mi9oslk61.jpg?width=1600&format=pjpg&auto=webp&s=52525d4afce8889e2e37da9ac253d9ad43b7a74f);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.326);
+    
+}
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* position: relative; */
+    animation: title 1.5s linear 1;
+    margin-top: 0px;
+}
+@keyframes title{
+    0%{
+        margin-top: -120px;
+    }
+    100%{
+margin-top: 0px;
+    }
+}
+.title_first {
+    /* animation: title 1.5s linear 1;
+    position: absolute;
+    top: 50px; */
+}
+.text{
+    color: aliceblue;
+}
+.text_2{
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.cloud_1{
+    position: absolute;
+    left: 60px;
+    opacity: 0%;
+    width: 150px;
+    height: 110px;
+    background-image: url(./foto/cloud-removebg-preview.png);
+    background-size: cover;
+}
+.person_1:active .cloud_1 {
+    opacity: 100%;
+}
+.cloud_2 {
+    position: absolute;
+    left: 510px;
+    opacity: 100%;
+    top: -10px;
+    width: 180px;
+    height: 133px;
+    background-image: url(./foto/cloud-removebg-preview_2.png);
+    background-size: cover;
+    opacity: 0%;
+}
+.person_2:active .cloud_2 {
+    opacity: 100%;
+}
+
+.text_3{
+    position: absolute;
+    left: 23px;
+    top: 30px;
+    width: 150px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.text_4{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+    font-size: 15px;
+    width: 70px;
+}
+.cloud_3{
+    position: absolute;
+    right: 450px;
+    opacity: 100%;
+    top: -10px;
+    width: 140px;
+    height: 103px;
+    background-image: url(./foto/cloud-removebg-preview.png);
+    background-size: cover;
+    opacity: 0%;
+}
+.person_3:active .cloud_3 {
+    opacity: 100%;
+}
+.text_5{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(0, 0, 0, 0.456);
+    border-radius: 10px;
+    font-size: 15px;
+    width: 80px;
+}
+.cloud_4 {
+    position: absolute;
+    right: 35px;
+    opacity: 100%;
+    top: -40px;
+    width: 140px;
+    height: 103px;
+    background-image: url(./foto/cloud-removebg-preview_2.png);
+    background-size: cover;
+    opacity: 0%;
+}
+.person_4:active .cloud_4 {
+    opacity: 100%;
+}
+.geroi {
+    position: relative;
+}
+.person_1 img{
+    width: 353px;
+    height: 707px;
+    position: absolute;
+    z-index: 1;
+    bottom: -620px;
+    left: 75px;
+    animation: hodg 2s ease-in-out 1;
+    transition: 1s;
+    cursor: pointer;
+}
+@keyframes hodg{
+    0%{
+        left: -400px;
+
+    }
+    100%{
+        left: 75px;
+    }
+}
+.person_1 img:hover{
+    width: 373px;
+    height: 727px;
+}
+.person_2 img{
+    width: 352px;
+    height: 709px;
+    position: absolute;
+    bottom: -770px;
+    left: 285px;
+    animation: lucifer 2s cubic-bezier(0.215, 0.610, 0.355, 1) 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.person_2 img:hover{
+    width: 372px;
+    height: 729px;
+}
+@keyframes lucifer{
+    0%{
+    bottom: -1300px;
+    opacity: 20%;
+    }
+    50%{
+        opacity: 60%;
+    }
+    100%{
+        bottom: -770px;
+        opacity: 100%;
+    }
+}
+.person_3 img{
+    width: 365px;
+    height: 666px;
+    position: absolute;
+    right: 200px;
+    bottom: -650px;
+    z-index: 2;
+    animation: rejtan 2.2s cubic-bezier(0.47, 0, 0.745, 0.715) 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.person_3 img:hover{
+    width: 385px;
+    height: 686px;
+}
+@keyframes rejtan{
+    0% {
+        right: 0px;
+        opacity: 20%;
+    }
+    50% {
+        opacity: 60%;
+    }
+    100%{
+        right: 200px;
+        opacity: 100%;
+    }
+}
+.person_4 img{
+    width: 433px;
+    height: 577px;
+    position: absolute;
+    right: 0;
+    animation: kadzu 3s cubic-bezier(0.77, 0, 0.175, 1) 1;
+    transition: 1s;
+    cursor: pointer;
+}
+.person_4 img:hover{
+    width: 453px;
+    height: 597px;
+}
+@keyframes kadzu{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.element_big {
+}
+.element_big_first {
+    position: absolute;
+    right: 520px;
+    bottom: 50px;
+    animation: heart 2s linear infinite alternate;
+}
+@keyframes heart{
+    0%{
+        bottom: 20px;
+    }
+    100%{
+        bottom: 70px;
+    }
+}
+.element_big_second {
+}
